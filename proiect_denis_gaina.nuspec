@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>proiect_denis_gaina</id>
-        <version>VERSION</version>
+        <version>1.0.1</version>
         <description>This component is a part of sample-dotnet-core-app</description>
         <authors>Denis Gaina</authors>
     </metadata>
