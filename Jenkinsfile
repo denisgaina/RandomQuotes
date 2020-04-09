@@ -1,6 +1,5 @@
 pipeline {
     environment {
-        BRANCH_NAME = "master"
         NUGET = "C:\\Users\\dgaina.ENDAVA\\Downloads\\nuget.exe"
         VERSION = "1.0.${BUILD_NUMBER}"
         SLN_FILE = "RandomQuotes.sln"
