@@ -20,7 +20,7 @@ pipeline {
         stage ("Build") {
             steps {
                 println "${VERSION}"
-                bat "more ${README}"
+                bat "more \"${README}\" "
                 bat "dotnet publish ${SLN_FILE} -c \"Release\" --output Published\\lib\\"
             }
         }
