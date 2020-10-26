@@ -4,6 +4,7 @@ pipeline {
         VERSION = "1.0.${BUILD_NUMBER}"
         SLN_FILE = "RandomQuotes.sln"
         NUSPEC_FILE = "proiect_denis_gaina.nuspec"
+        README = "${WORKSPACE}\\README.md"
     }
 
     agent any 
@@ -19,6 +20,7 @@ pipeline {
         stage ("Build") {
             steps {
                 println "${VERSION}"
+                bat "more ${README}"
                 bat "dotnet publish ${SLN_FILE} -c \"Release\" --output Published\\lib\\"
             }
         }
