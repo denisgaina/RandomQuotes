@@ -18,6 +18,7 @@ pipeline {
 
         stage ("Build") {
             steps {
+                println "${VERSION}"
                 bat "dotnet publish ${SLN_FILE} -c \"Release\" --output Published\\lib\\"
             }
         }
